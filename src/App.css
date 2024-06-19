@@ -1,0 +1,206 @@
+#wrap {
+  background-color: #ffffff;
+  width: 100%;
+  height: 300%;
+  position: relative;
+}
+
+.one {
+  background-color: #ffffff;
+  width: 100%;
+  height: 400vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.white {
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  width: 50%;
+  height: 30vh;
+  top : 30%;
+  z-index: 4;
+}
+
+.media {
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  width: 150vh;
+  height: 100vh;
+  background-size: cover;
+  z-index: 1;
+  animation: moveLeft 7s infinite;
+}
+
+.layer_1 {
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  top: 130vh;
+  width: 50%;
+  height: 400vh;
+  z-index: 2;
+}
+
+.fixed_text {
+  font-size: 250%;
+  position: sticky;
+  top: 30%; /* Layer_1 내에서 중앙에 고정되도록 설정 */
+  transform: translate(17%, 0%);
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 2;
+}
+
+.fixed_text_2 {
+  font-size: 125%;
+  position: sticky;
+  top: 50%;
+  transform: translate(10%, -20%);
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 2;
+}
+
+.fixed_text_3 {
+  font-size: 250%;
+  position: sticky;
+  top: 35%;
+  transform: translate(15%, -70%);
+  background-color: rgba(255, 255, 255, 0);
+  z-index: 2;
+}
+
+.fixed_text_4 {
+  font-size: 125%;
+  position: sticky;
+  top: 60%;
+  transform: translate(17%, -60%);
+  z-index: 2;
+}
+
+.layer_2 {
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  top: 130vh;
+  width: 50%;
+  height: 400vh;
+  transform: translateX(100%);
+  z-index: 2;
+}
+
+.Video_1 {
+  position: absolute;
+  top: 10%; /* 부모 요소인 .one의 세로 중앙에 위치 */
+  left: 50%; /* 부모 요소인 .one의 가로 중앙에 위치 */
+  transform: translate(-50%, -50%); /* 세로로 -50%, 가로로 -50% 이동하여 가운데 정렬 */
+  width: 60%;
+  height: 15%;
+  background-color: rgba(71, 67, 67, 0); /* 배경색 설정 (투명도 포함) */
+}
+
+.video_cm_1 {
+  margin-top: 10px;
+  font-size: 30px;
+  color: #181818;
+  text-align: left;
+}
+
+.video_cm_2 {
+  font-size: 16px;
+  color: #acacac;
+  text-align: left;
+  transform: translateY(-100%);
+}
+
+
+.Video_2 {
+  position: absolute;
+  top: 40%; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  height: 15%;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.Video_3 {
+  position: absolute;
+  top: 70%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  width: 60%;
+  height: 15%;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.layer_3 {
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  top: 500vh;
+  width: 50%;
+  height: 400vh;
+  transform: translateX(100%);
+  z-index: 2;
+}
+
+.layer_4 {
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  top: 500vh;
+  width: 50%;
+  height: 400vh;
+  z-index: 4;
+}
+
+.lay4_image {
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  top : 30vh;
+  width: 100%;
+  height: 370vh;
+  z-index: 3;
+}
+
+#image1 {
+  position: absolute;
+  top: 15%;
+  left: 20%; 
+  transform: translate(-50%, -50%); /* 세로로 -50%, 가로로 -50% 이동하여 가운데 정렬 */
+  width: 40%;
+  height: 10%;
+  background-image: url('준호선배.jpg');
+  background-size: cover;
+  background-color: black; /* 배경색 설정 (이미지 없을 때 보일 색) */
+  z-index: 4;
+}
+
+#image2 {
+  position: absolute;
+  top: 15%; 
+  left: 70%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  height: 10%;
+  background-image: url('민수선배.jpg');
+  background-size: cover;
+  background-position: center;
+  background-color: gray; /* 배경색 설정 (이미지 없을 때 보일 색) */
+  z-index: 4;
+}
+
+#image3 {
+  position: absolute;
+  top: 30%; 
+  left: 20%; 
+  transform: translate(-50%, -50%);
+  width: 40%;
+  height: 10%;
+  background-image: url('준영선배.jpg');
+  background-size: cover;
+  background-position: center;
+  background-color: lightgray; /* 배경색 설정 (이미지 없을 때 보일 색) */
+  z-index: 4;
+}
+
+@keyframes moveLeft {
+  0% { transform: translateX(20%); }
+  100% { transform: translateX(10%); } /* 요소가 완전히 사라지지 않도록 조정 */
+}
